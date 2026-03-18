@@ -113,7 +113,7 @@ if (contactForm && contactSubmit && contactStatus && window.emailjs) {
     try {
       await window.emailjs.sendForm("service_tpdqo5p", "template_8ounrds", contactForm);
       contactForm.reset();
-      contactStatus.textContent = "Pesan berhasil dikirim ke email saya.";
+      contactStatus.textContent = "Pesan berhasil dikirim";
     } catch (error) {
       console.error(error);
       contactStatus.textContent = "Pesan gagal dikirim. Coba lagi sebentar.";
