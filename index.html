@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html lang="id" data-theme="dark">
+<html lang="id" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Andri - AI Automation Portfolio</title>
+    <title>Andri - AI Automation Portofolio</title>
     <meta name="description" content="Portofolio Andri - AI Automation, n8n, Odoo, dan Python scraping." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Cormorant+Garamond:wght@600;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -22,175 +29,244 @@
 
     <header class="site-header">
       <div class="container header-inner">
-        <a class="logo" href="#home">andri.</a>
-        <nav class="nav">
-          <a href="#home" data-i18n-id="Home" data-i18n-en="Home">Home</a>
-          <a href="#services" data-i18n-id="Service" data-i18n-en="Services">Service</a>
-          <a href="#projects" data-i18n-id="Project" data-i18n-en="Projects">Project</a>
-          <a href="#about" data-i18n-id="About" data-i18n-en="About">About</a>
-          <a href="#contact" data-i18n-id="Contact" data-i18n-en="Contact">Contact</a>
+        <a class="logo" href="#home">ANDRI</a>
+        <button
+          id="menuToggle"
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="siteNav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="siteNav" class="nav">
+          <a href="#home" data-i18n-id="Beranda" data-i18n-en="Home">Beranda</a>
+          <a href="#focus" data-i18n-id="Fokus" data-i18n-en="Focus">Fokus</a>
+          <a href="#tools" data-i18n-id="Tools yang Digunakan" data-i18n-en="Tools">Tools yang Digunakan</a>
+          <a href="#projects" data-i18n-id="Proyek" data-i18n-en="Projects">Proyek</a>
+          <a href="#about" data-i18n-id="Tentang" data-i18n-en="About">Tentang</a>
+          <a href="#experience" data-i18n-id="Pengalaman" data-i18n-en="Experience">Pengalaman</a>
+          <a href="#certificates" data-i18n-id="Sertifikat" data-i18n-en="Certificates">Sertifikat</a>
+          <a href="#contact" data-i18n-id="Kontak" data-i18n-en="Contact">Kontak</a>
         </nav>
         <div class="header-actions">
-          <button id="themeToggle" class="theme-toggle" type="button">Light</button>
+          <button id="themeToggle" class="theme-toggle" type="button">Dark</button>
           <button id="langToggle" class="lang-toggle" type="button">EN</button>
         </div>
       </div>
     </header>
+    <div id="navBackdrop" class="nav-backdrop" hidden></div>
 
     <main>
       <section id="home" class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow" data-i18n-id="AI Automation Developer" data-i18n-en="AI Automation Developer">
-              AI Automation Developer
+            <p class="eyebrow" data-i18n-id="Personal Portofolio" data-i18n-en="Personal Portfolio">
+              Personal Portofolio
             </p>
             <h1
               class="hero-title"
-              data-i18n-id="Membuat semuanya menjadi otomatis, fleksibel, dan berdampak."
-              data-i18n-en="Making everything automated, flexible, and impactful."
+              data-i18n-id="Andri, siswa yang membangun workflow AI automation dan sistem digital yang rapi."
+              data-i18n-en="Andri, a student building structured AI automation workflows and digital systems."
             >
-              Membuat semuanya menjadi otomatis, fleksibel, dan berdampak.
+            Saya Andri, Siswa Jurusan Rekayasa Perangkat Lunak dengan fokus utama membangun otomasi sistem dan integrasi platform untuk efisiensi bisnis.
             </h1>
             <p
               class="hero-subtitle"
-              data-i18n-id="Saya Andri. Fokus di AI automation menggunakan n8n, Python (Selenium), dan Odoo untuk membantu bisnis tumbuh lebih cepat."
-              data-i18n-en="I am Andri. I focus on AI automation using n8n, Python (Selenium), and Odoo to help businesses move faster."
+              data-i18n-id="Saya fokus pada automation, integrasi tools, dan pengolahan data menggunakan n8n, Python, dan Odoo. Website ini menampilkan profil, project, dokumentasi, dan sertifikat yang saya kumpulkan selama belajar dan praktik."
+              data-i18n-en="I focus on automation, tool integration, and data work using n8n, Python, and Odoo. This website highlights my profile, projects, documentation, and certificates built through study and hands-on practice."
             >
-              Saya Andri. Fokus di AI automation menggunakan n8n, Python (Selenium), dan Odoo untuk membantu bisnis tumbuh lebih cepat.
+              Keahlian utama saya ada di otomasi sistem, menghubungkan platform seperti n8n, Odoo, WhatsApp, dan API agar proses bisnis dapat berjalan secara otomatis. Saya juga bisa mengembangkan website. Website ini mendokumentasikan project, fokus keahlian, dan sertifikat yang saya kumpulkan selama intern.
             </p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="#projects" data-i18n-id="Lihat Project" data-i18n-en="View Projects">
                 Lihat Project
               </a>
-              <a class="btn btn-ghost" href="#contact" data-i18n-id="Hubungi Saya" data-i18n-en="Contact Me">
-                Hubungi Saya
-              </a>
+              
             </div>
             <div class="hero-tags">
-              <span>n8n</span>
+              <span>N8N</span>
               <span>Odoo</span>
               <span>Python</span>
               <span>AI Automation</span>
             </div>
-            <div class="logo-strip" aria-label="Tool logos">
-              <div class="logo-item" style="--logo: url('assets/logo-n8n.png')">
-                <span>n8n</span>
-              </div>
-              <div class="logo-item" style="--logo: url('assets/logo-odoo.png')">
-                <span>Odoo</span>
-              </div>
-              <div class="logo-item" style="--logo: url('assets/logo-kaitech.png')">
-                <span>Kaitech</span>
-              </div>
-            </div>
           </div>
           <div class="hero-visual">
-            <div class="orbit-card reveal">
-              <div class="orbit-core"></div>
-              <div class="orbit-ring"></div>
-              <div class="orbit-ring orbit-ring-2"></div>
-              <div class="orbit-ring orbit-ring-3"></div>
+            <div class="profile-preview-wrap reveal" aria-hidden="true">
+              <div class="profile-preview-orb">
+                <img class="profile-preview-image" src="assets/profile.JPG" alt="Foto Andri" loading="eager" />
+              </div>
             </div>
             <div class="stat-card reveal">
-              <p class="stat-title" data-i18n-id="Fokus" data-i18n-en="Focus">Fokus</p>
-              <p class="stat-value" data-i18n-id="AI + Automation" data-i18n-en="AI + Automation">AI + Automation</p>
-              <p class="stat-sub" data-i18n-id="Flexible workflow untuk UMKM dan bisnis digital" data-i18n-en="Flexible workflows for SMEs and digital business">
-                Flexible workflow untuk UMKM dan bisnis digital
+              <p class="stat-title" data-i18n-id="Saat Ini" data-i18n-en="Currently">Saat Ini</p>
+              <p class="stat-value" data-i18n-id="Intern + Student Builder" data-i18n-en="Intern + Student Builder">Intern + Pelajar</p>
+              <p class="stat-sub" data-i18n-id="Membangun portofolio nyata di bidang automation, scraping, dan business system." data-i18n-en="Building a real portfolio in automation, scraping, and business systems.">
+                Fokus di otomasi sistem dan integrasi platform bisnis. Bisa web development juga.
               </p>
+              <div class="mini-points">
+                <span>SMKN 2 Jakarta</span>
+                <span>Intern @ KAI Teknologi Aplikatif</span>
+                <span>Jakarta</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="projects" class="section projects">
+      <section id="tools" class="section projects">
         <div class="container">
           <div class="section-head">
-            <h2 data-i18n-id="Project Terbaru" data-i18n-en="Featured Projects">Project Terbaru</h2>
-            <p data-i18n-id="Tiga area utama yang sedang saya kembangkan sekarang." data-i18n-en="Three core areas I am building right now.">
-              Tiga area utama yang sedang saya kembangkan sekarang.
+            <h2 data-i18n-id="Tools yang Digunakan" data-i18n-en="Tools I Use">Tools yang Digunakan</h2>
+            <p data-i18n-id="Beberapa tools utama yang saya gunakan untuk membangun automation, scraping, dan sistem bisnis digital." data-i18n-en="A few core tools I use to build automation, scraping, and digital business systems.">
+              Beberapa tools utama yang saya gunakan untuk membangun automation, scraping, dan sistem bisnis digital.
             </p>
           </div>
           <div class="card-grid">
             <article class="project-card reveal">
-              <div class="project-media gradient-a" aria-hidden="true"></div>
+              <div class="project-media gradient-a" aria-hidden="true">
+                <img class="project-logo" src="assets/n8n.png" alt="Logo n8n" loading="lazy" />
+              </div>
               <div class="project-body">
-                <h3>n8n Automation</h3>
+                <h3>n8n</h3>
                 <p
-                  data-i18n-id="Workflow otomatis untuk UMKM: integrasi WhatsApp, CRM, dan laporan real time."
-                  data-i18n-en="Automation workflows for SMEs: WhatsApp, CRM, and real time reporting integrations."
+                  data-i18n-id="Saya gunakan untuk membangun workflow automation, integrasi antar aplikasi, dan proses operasional yang berjalan otomatis."
+                  data-i18n-en="I use it to build automation workflows, application integrations, and operational processes that run automatically."
                 >
-                  Workflow otomatis untuk UMKM: integrasi WhatsApp, CRM, dan laporan real time.
+                  Saya gunakan untuk membangun workflow automation, integrasi antar aplikasi, dan proses operasional yang berjalan otomatis.
                 </p>
-                <span class="tag">UMKM</span>
-                <span class="tag">Workflow</span>
+                <span class="tag">Automation</span>
+                <span class="tag">Integration</span>
               </div>
             </article>
             <article class="project-card reveal">
-              <div class="project-media gradient-b" aria-hidden="true"></div>
+              <div class="project-media gradient-b" aria-hidden="true">
+                <img class="project-logo" src="assets/python.png" alt="Logo Python" loading="lazy" />
+              </div>
               <div class="project-body">
-                <h3>Python Scraping</h3>
+                <h3>Python</h3>
                 <p
-                  data-i18n-id="Scraping data dengan Selenium untuk riset, monitoring harga, dan analisis kompetitor."
-                  data-i18n-en="Selenium scraping for research, price monitoring, and competitor analysis."
+                  data-i18n-id="Saya gunakan untuk scraping, OCR workflow, data processing, dan logic custom sesuai kebutuhan project."
+                  data-i18n-en="I use it for scraping, OCR workflows, data processing, and custom logic based on project needs."
                 >
-                  Scraping data dengan Selenium untuk riset, monitoring harga, dan analisis kompetitor.
+                  Saya gunakan untuk scraping, data processing, dan logic custom sesuai kebutuhan project.
                 </p>
                 <span class="tag">Selenium</span>
-                <span class="tag">Data</span>
+                <span class="tag">OCR</span>
               </div>
             </article>
             <article class="project-card reveal">
-              <div class="project-media gradient-c" aria-hidden="true"></div>
+              <div class="project-media gradient-c" aria-hidden="true">
+                <img class="project-logo" src="assets/odoo.png" alt="Logo Odoo" loading="lazy" />
+              </div>
               <div class="project-body">
-                <h3>Odoo Business</h3>
+                <h3>Odoo</h3>
                 <p
-                  data-i18n-id="Odoo untuk ERP, inventory, dan proses bisnis yang lebih rapi dan terukur."
-                  data-i18n-en="Odoo for ERP, inventory, and structured business processes."
+                  data-i18n-id="Saya gunakan untuk kebutuhan ERP, payroll, inventory, dan alur operasi bisnis yang lebih terstruktur."
+                  data-i18n-en="I use it for ERP, payroll, inventory, and more structured business operation flows."
                 >
-                  Odoo untuk ERP, inventory, dan proses bisnis yang lebih rapi dan terukur.
+                 Saya gunakan untuk kebutuhan ERP, sistem yang membantu mengelola dan mengintegrasikan proses operasional bisnis dalam satu platform.
                 </p>
                 <span class="tag">ERP</span>
-                <span class="tag">Business</span>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-media gradient-d" aria-hidden="true">
+                <img class="project-logo" src="assets/chatgpt.png" alt="Logo ChatGPT" loading="lazy" />
+              </div>
+              <div class="project-body">
+                <h3>ChatGPT</h3>
+                <p
+                  data-i18n-id="Saya gunakan untuk membantu pembuatan konten, chatbot, pemrosesan teks, dan kebutuhan AI workflow."
+                  data-i18n-en="I use it to support content generation, chatbots, text processing, and AI workflow needs."
+                >
+                  Saya gunakan untuk membantu pembuatan project, pemrosesan teks, dan kebutuhan AI workflow.
+                </p>
+                <span class="tag">AI</span>
+                <span class="tag">Content</span>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-media gradient-e" aria-hidden="true">
+                <img class="project-logo" src="assets/vscode.png" alt="Logo VS Code" loading="lazy" />
+              </div>
+              <div class="project-body">
+                <h3>VS Code</h3>
+                <p
+                  data-i18n-id="Saya gunakan sebagai editor utama untuk menulis, menguji, dan merapikan code pada project automation maupun website."
+                  data-i18n-en="I use it as my main editor to write, test, and refine code for automation and website projects."
+                >
+                  Saya gunakan sebagai editor utama untuk menulis, menguji, dan merapikan code pada project automation maupun website.
+                </p>
+                <span class="tag">Editor</span>
+                <span class="tag">Coding</span>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-media gradient-f" aria-hidden="true">
+                <img class="project-logo" src="assets/kilocode.png" alt="Logo Kilocode" loading="lazy" />
+              </div>
+              <div class="project-body">
+                <h3>Kilocode</h3>
+                <p
+                  data-i18n-id="Saya gunakan untuk membantu proses coding, eksplorasi ide, dan mempercepat pengerjaan bagian teknis dalam project."
+                  data-i18n-en="I use it to support coding workflows, idea exploration, and speed up technical work across projects."
+                >
+                  Saya gunakan untuk membantu proses coding, eksplorasi ide, dan mempercepat pengerjaan bagian teknis dalam project.
+                </p>
+                <span class="tag">AI Coding</span>
+                <span class="tag">Productivity</span>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="services" class="section services">
+      <section id="focus" class="section services">
         <div class="container">
           <div class="section-head">
-            <h2 data-i18n-id="Service" data-i18n-en="Services">Service</h2>
-            <p data-i18n-id="Solusi fleksibel untuk membuat semua hal jadi otomatis dengan bantuan AI." data-i18n-en="Flexible solutions to make everything automated with AI.">
-              Solusi fleksibel untuk membuat semua hal jadi otomatis dengan bantuan AI.
+            <h2 data-i18n-id="Fokus Utama" data-i18n-en="Core Focus">Fokus Utama</h2>
+            <p data-i18n-id="Area yang paling sering saya pelajari dan bangun sebagai bagian dari pengembangan portofolio." data-i18n-en="The areas I focus on most as part of building my portfolio.">
+              Area yang paling sering saya pelajari dan bangun sebagai bagian dari pengembangan portofolio.
             </p>
           </div>
           <div class="service-grid">
             <article class="service-card reveal">
-              <h3 data-i18n-id="AI Workflow" data-i18n-en="AI Workflows">AI Workflow</h3>
+              <h3 data-i18n-id="Automation Workflow" data-i18n-en="Automation Workflow">Automation Workflow</h3>
               <p
-                data-i18n-id="Desain alur kerja otomatis yang mengurangi tugas repetitif dan menjaga bisnis tetap cepat."
-                data-i18n-en="Automated workflows that remove repetitive tasks and keep business moving fast."
+                data-i18n-id="Mempelajari dan membangun alur kerja otomatis untuk tugas yang repetitif agar proses lebih efisien."
+                data-i18n-en="Learning and building automated workflows for repetitive tasks so processes become more efficient."
               >
-                Desain alur kerja otomatis yang mengurangi tugas repetitif dan menjaga bisnis tetap cepat.
+                Membangun alur kerja otomatis agar tugas-tugas yang sebelumnya masih manual dapat jauh lebih efisien dengan automasi.
               </p>
             </article>
             <article class="service-card reveal">
-              <h3 data-i18n-id="Integrasi Tools" data-i18n-en="Tool Integration">Integrasi Tools</h3>
+              <h3 data-i18n-id="System Integration" data-i18n-en="System Integration">System Integration</h3>
               <p
-                data-i18n-id="Menghubungkan n8n, Odoo, WhatsApp, email, dan API lain dalam satu sistem."
-                data-i18n-en="Connect n8n, Odoo, WhatsApp, email, and other APIs into a single system."
+                data-i18n-id="Menghubungkan tools seperti n8n, Odoo, WhatsApp, email, dan API lain menjadi sistem yang saling terhubung."
+                data-i18n-en="Connecting tools like n8n, Odoo, WhatsApp, email, and other APIs into a connected system."
               >
-                Menghubungkan n8n, Odoo, WhatsApp, email, dan API lain dalam satu sistem.
+                Menghubungkan beberapa platform sekaligus agar data dan proses bisa mengalir antar sistem tanpa perlu dipindahkan manual.
               </p>
             </article>
             <article class="service-card reveal">
-              <h3 data-i18n-id="Data & Insight" data-i18n-en="Data & Insight">Data & Insight</h3>
+              <h3 data-i18n-id="Data Exploration" data-i18n-en="Data Exploration">Data Exploration</h3>
               <p
-                data-i18n-id="Scraping dan otomasi data untuk insight yang bisa dipakai langsung."
-                data-i18n-en="Scraping and automation to turn data into actionable insights."
+                data-i18n-id="Menggunakan scraping dan otomasi data untuk riset, monitoring, dan pembelajaran berbasis praktik."
+                data-i18n-en="Using scraping and data automation for research, monitoring, and practice-based learning."
               >
-                Scraping dan otomasi data untuk insight yang bisa dipakai langsung.
+                Menggunakan scraping dan otomasi data untuk kebutuhan riset dan mengumpulkan data secara cepat.
+              </p>
+            </article>
+            <article class="service-card reveal">
+              <h3 data-i18n-id="Website Development" data-i18n-en="Website Development">Website Development</h3>
+              <p
+                data-i18n-id="Saya juga bisa membuat website portofolio, company profile, landing page, dan tampilan web yang disesuaikan dengan kebutuhan."
+                data-i18n-en="I can also build portfolio websites, company profiles, landing pages, and web interfaces tailored to specific needs."
+              >
+                Selain otomasi, saya bisa membangun website, mulai dari portofolio, company profile, sampai landing page yang disesuaikan dengan kebutuhan.
               </p>
             </article>
           </div>
@@ -202,93 +278,246 @@
           <div class="about-copy">
             <h2 data-i18n-id="Tentang Saya" data-i18n-en="About Me">Tentang Saya</h2>
             <p
-              data-i18n-id="Nama saya Andri, lahir 27 September 2007. Saya siswa SMKN 2 Jakarta dan sedang intern di PT KAI Teknologi Aplikatif (kaitech.io)."
-              data-i18n-en="My name is Andri, born September 27, 2007. I am a student at SMKN 2 Jakarta and currently interning at PT KAI Teknologi Aplikatif (kaitech.io)."
+              data-i18n-id="Nama saya Andri. Saya siswa SMKN 2 Jakarta dan sedang intern di PT KAI Teknologi Aplikatif. Fokus saya adalah membangun portofolio yang menunjukkan hasil belajar saya secara nyata."
+              data-i18n-en="My name is Andri. I am a student at SMKN 2 Jakarta and currently interning at PT KAI Teknologi Aplikatif. My focus is building a portfolio that shows my learning through real output."
             >
-              Nama saya Andri, lahir 27 September 2007. Saya siswa SMKN 2 Jakarta dan sedang intern di PT KAI Teknologi Aplikatif (kaitech.io).
+              Saya Andri, siswa jurusan Rekayasa Perangkat Lunak di SMKN 2 Jakarta, saat ini intern di PT KAI Teknologi Aplikatif. Keahlian utama saya ada di otomasi sistem, menghubungkan beberapa platform agar proses bisnis bisa berjalan lebih efisien. Saya juga bisa membangun website.
             </p>
             <p
-              data-i18n-id="Fokus saya adalah membuat otomatisasi yang fleksibel, cepat, dan relevan untuk kebutuhan bisnis dan UMKM."
-              data-i18n-en="My focus is building flexible, fast automation that fits business and SME needs."
+              data-i18n-id="Saya tertarik pada AI automation, scraping, integrasi sistem, dan workflow digital yang bisa diterapkan pada kebutuhan operasional nyata."
+              data-i18n-en="I am interested in AI automation, scraping, system integration, and digital workflows that can be applied to real operational needs."
             >
-              Fokus saya adalah membuat otomatisasi yang fleksibel, cepat, dan relevan untuk kebutuhan bisnis dan UMKM.
+              Saya lebih banyak belajar dari praktik langsung, dan portofolio ini adalah hasil dari apa yang sudah saya kerjakan selama proses itu.
             </p>
             <div class="about-badges">
-              <span>Intern @ kaitech.io</span>
+              <span>Intern @ KAI Teknologi Aplikatif</span>
               <span>SMKN 2 Jakarta</span>
               <span>AI Automation</span>
             </div>
           </div>
           <div class="about-card reveal">
-            <h3 data-i18n-id="Highlight" data-i18n-en="Highlights">Highlight</h3>
+            <h3 data-i18n-id="Highlight Portofolio" data-i18n-en="Portfolio Highlights">Highlight Portofolio</h3>
             <ul>
-              <li data-i18n-id="Membangun workflow otomatis berbasis n8n." data-i18n-en="Building automation workflows with n8n.">
-                Membangun workflow otomatis berbasis n8n.
+              <li data-i18n-id="Membangun workflow otomatis berbasis n8n untuk tugas yang berulang." data-i18n-en="Building n8n-based workflows for repetitive operational tasks.">
+                Membangun workflow otomatis menggunakan n8n untuk menangani proses yang sebelumnya dikerjakan secara manual.
               </li>
-              <li data-i18n-id="Mengembangkan scraping data dengan Python + Selenium." data-i18n-en="Developing data scraping with Python + Selenium.">
-                Mengembangkan scraping data dengan Python + Selenium.
+              <li data-i18n-id="Mengeksplor scraping data dengan Python dan Selenium untuk kebutuhan riset." data-i18n-en="Exploring data scraping with Python and Selenium for research needs.">
+                Mengeksplorasi scraping data dengan Python dan Selenium untuk kebutuhan riset dan pengumpulan data.
               </li>
-              <li data-i18n-id="Odoo untuk kebutuhan ERP dan operasi bisnis." data-i18n-en="Odoo for ERP and business operations.">
-                Odoo untuk kebutuhan ERP dan operasi bisnis.
+              <li data-i18n-id="Belajar sistem bisnis digital melalui implementasi Odoo dan integrasi tools." data-i18n-en="Learning digital business systems through Odoo implementation and tool integration.">
+                Mempelajari implementasi Odoo dan mengintegrasikannya dengan tools lain sebagai bagian dari sistem bisnis digital.
               </li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section class="section gallery">
+      <section id="experience" class="section experience">
         <div class="container">
           <div class="section-head">
-            <h2 data-i18n-id="Dokumentasi" data-i18n-en="Documentation">Dokumentasi</h2>
+            <h2 data-i18n-id="Experience Timeline" data-i18n-en="Experience Timeline">Experience Timeline</h2>
             <p
-              data-i18n-id="Di bawah ini adalah ringkasan visual project, nanti diganti dengan foto asli."
-              data-i18n-en="Below is a visual summary of projects, ready to be replaced with real photos."
+              data-i18n-id="Perjalanan intern saya yang membentuk pengalaman kerja, ritme belajar, dan cara saya membangun project."
+              data-i18n-en="My internship journey that shaped my work experience, learning rhythm, and how I build projects."
             >
-              Di bawah ini adalah ringkasan visual project, nanti diganti dengan foto asli.
+              Perjalanan intern saya yang membentuk pengalaman kerja, ritme belajar, dan cara saya membangun project.
+            </p>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <p class="timeline-period" data-i18n-id="Juli - Desember" data-i18n-en="July - December">Juli - Desember</p>
+                <h3>KAI Teknologi Aplikatif</h3>
+                <p class="timeline-role" data-i18n-id="Divisi Botkilat" data-i18n-en="Botkilat Division">Divisi Botkilat</p>
+                <p
+                  data-i18n-id="Memulai pengalaman intern dengan terlibat pada lingkungan kerja berbasis automation dan pengembangan solusi digital."
+                  data-i18n-en="Started my internship experience by working in an automation-focused environment and contributing to digital solution development."
+                >
+                  Memulai intern dan langsung bekerja di lingkungan berbasis otomasi. Di sini saya mulai memahami bagaimana sistem dapat dibangun secara otomatis tanpa harus manual, dan mulai membuat beberapa project kebutuhan client terutama di sektor UMKM
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <p class="timeline-period" data-i18n-id="Desember - Sekarang" data-i18n-en="December - Present">Desember - Sekarang</p>
+                <h3>KAI Teknologi Aplikatif</h3>
+                <p class="timeline-role" data-i18n-id="Intern" data-i18n-en="Intern">Intern</p>
+                <p
+                  data-i18n-id="Melanjutkan proses belajar dan praktik di lingkungan profesional yang lebih luas, sambil memperkuat portofolio automation, integrasi, dan sistem digital."
+                  data-i18n-en="Continuing to learn and practice in a broader professional environment while strengthening my portfolio in automation, integration, and digital systems."
+                >
+                  Melanjutkan intern dengan fokus yang lebih terarah, saya mulai memahami bagaimana alur bisnis bekerja dan terlibat langsung dalam pengembangannya menggunakan Odoo sebagai sistem ERP.
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section gallery">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-i18n-id="Project" data-i18n-en="Projects">Project</h2>
+            <p
+              data-i18n-id="Di bawah ini adalah project real client yang sudah saya kerjakan dan uji dalam kebutuhan nyata."
+              data-i18n-en="Below are real client projects I have worked on and tested in real use cases."
+            >
+              Di bawah ini adalah project real client yang sudah saya kerjakan dan uji dalam kebutuhan nyata.
             </p>
           </div>
           <div class="gallery-grid">
             <article class="gallery-card reveal">
-              <div class="gallery-thumb gradient-a" style="--thumb: url('assets/doc-01.jpg')">Photo 01</div>
+              <div class="gallery-thumb gradient-a" style="--thumb: url('assets/doc-01.png')"></div>
               <div class="gallery-caption" data-i18n-id="Auto posting ke WordPress dari scraping Shopee (n8n)." data-i18n-en="Auto posting to WordPress from Shopee scraping (n8n).">
-                Auto posting ke WordPress dari scraping Shopee (n8n).
+                Auto posting Product ke WordPress dari hasil scraping Shopee Python Selenium
               </div>
             </article>
             <article class="gallery-card reveal">
-              <div class="gallery-thumb gradient-b" style="--thumb: url('assets/doc-02.jpg')">Photo 02</div>
+              <div class="gallery-thumb gradient-b" style="--thumb: url('assets/doc-06.png')"></div>
               <div class="gallery-caption" data-i18n-id="Python Selenium scraping produk Shopee." data-i18n-en="Python Selenium scraping Shopee products.">
-                Python Selenium scraping produk Shopee.
+                Python Selenium scraping product Shopee.
               </div>
             </article>
             <article class="gallery-card reveal">
-              <div class="gallery-thumb gradient-c" style="--thumb: url('assets/doc-03.jpg')">Photo 03</div>
+              <div class="gallery-thumb gradient-c" style="--thumb: url('assets/doc-03.png')"></div>
               <div class="gallery-caption" data-i18n-id="Chatbot untuk client petshop (n8n)." data-i18n-en="Chatbot for petshop client (n8n).">
                 Chatbot untuk client petshop (n8n).
               </div>
             </article>
             <article class="gallery-card reveal">
-              <div class="gallery-thumb gradient-d" style="--thumb: url('assets/doc-04.jpg')">Photo 04</div>
+              <div class="gallery-thumb gradient-d" style="--thumb: url('assets/doc-04.png')"></div>
               <div class="gallery-caption" data-i18n-id="Auto posting Instagram + caption + auto reply (n8n)." data-i18n-en="Auto posting Instagram + caption + auto reply (n8n).">
                 Auto posting Instagram + caption + auto reply (n8n).
               </div>
             </article>
             <article class="gallery-card reveal">
-              <div class="gallery-thumb gradient-e" style="--thumb: url('assets/doc-05.jpg')">Photo 05</div>
+              <div class="gallery-thumb gradient-e" style="--thumb: url('assets/doc-05.png')"></div>
               <div class="gallery-caption" data-i18n-id="Penerimaan & pencatatan bukti transaksi via WhatsApp/Email (n8n)." data-i18n-en="Transaction proof intake & logging via WhatsApp/Email (n8n).">
                 Penerimaan & pencatatan bukti transaksi via WhatsApp/Email (n8n).
               </div>
             </article>
             <article class="gallery-card reveal">
-              <div class="gallery-thumb gradient-f" style="--thumb: url('assets/doc-06.jpg')">Photo 06</div>
+              <div class="gallery-thumb gradient-f" style="--thumb: url('assets/doc-02.png')"></div>
               <div class="gallery-caption" data-i18n-id="Bot koreksi jawaban + reminder remedial otomatis (n8n)." data-i18n-en="Answer correction bot + auto remedial reminders (n8n).">
                 Bot koreksi jawaban + reminder remedial otomatis (n8n).
               </div>
             </article>
             <article class="gallery-card reveal">
-              <div class="gallery-thumb gradient-a" style="--thumb: url('assets/doc-07.jpg')">Photo 07</div>
-              <div class="gallery-caption" data-i18n-id="Sistem HR di Odoo." data-i18n-en="Odoo HR system.">
-                Sistem HR di Odoo.
+              <div class="gallery-thumb gradient-b" style="--thumb: url('assets/artikel.png')"></div>
+              <div
+                class="gallery-caption"
+                data-i18n-id="Generate artikel otomatis untuk diposting ke blog, sehingga proses penulisan dan publishing jadi lebih cepat."
+                data-i18n-en="Automatically generating articles for blog publishing, making the writing and posting process faster."
+              >
+                Generate artikel otomatis untuk diposting ke blog, sehingga proses penulisan dan publishing jadi lebih cepat.
               </div>
+            </article>
+            <article class="gallery-card reveal">
+              <div class="gallery-thumb gradient-c" style="--thumb: url('assets/aisera.png')"></div>
+              <div
+                class="gallery-caption"
+                data-i18n-id="Validasi dokumen jamaah umroh menggunakan metode OCR untuk memastikan dokumen sesuai, terbaca, dan valid."
+                data-i18n-en="Umrah pilgrim document validation using OCR methods to ensure documents are correct, readable, and valid."
+              >
+                Validasi dokumen jamaah umroh menggunakan metode OCR untuk memastikan dokumen sesuai, terbaca, dan valid.
+              </div>
+            </article>
+            <article class="gallery-card reveal">
+              <div class="gallery-thumb gradient-d" style="--thumb: url('assets/chatbotaisera.png')"></div>
+              <div
+                class="gallery-caption"
+                data-i18n-id="Chatbot untuk menjawab pertanyaan seputar layanan umroh, booking tiket pesawat, dan pembayaran layanan."
+                data-i18n-en="Chatbot for answering questions about umrah services, flight booking, and service payments."
+              >
+                Chatbot untuk menjawab pertanyaan seputar layanan umroh, booking tiket pesawat, dan pembayaran layanan.
+              </div>
+            </article>
+            <article class="gallery-card reveal">
+              <div class="gallery-thumb gradient-e" style="--thumb: url('assets/bakso.png')"></div>
+              <div
+                class="gallery-caption"
+                data-i18n-id="Sistem payroll gaji karyawan, laporan harian, mingguan, bulanan, pencatatan pendapatan dari foto ke sheet, serta pencatatan stok bahan baku."
+                data-i18n-en="Employee payroll system with daily, weekly, and monthly reports, revenue recording from photos into sheets, and raw material stock tracking."
+              >
+                Sistem payroll gaji karyawan, laporan harian, mingguan, bulanan, pencatatan pendapatan dari foto ke sheet, serta pencatatan stok bahan baku.
+              </div>
+            </article>
+            <article class="gallery-card reveal">
+              <div class="gallery-thumb gradient-f" style="--thumb: url('assets/pertanian.png')"></div>
+              <div
+                class="gallery-caption"
+                data-i18n-id="Sistem pencatatan daily activities pekerja kebun: foto laporan dari grup masuk ke sheet, lalu tugas harian otomatis di-assign ke karyawan via WhatsApp."
+                data-i18n-en="A farm worker daily activity system: report photos from a group are recorded into sheets, then daily tasks are automatically assigned to workers via WhatsApp."
+              >
+                Sistem pencatatan daily activities pekerja kebun: foto laporan dari grup masuk ke sheet, lalu tugas harian otomatis di-assign ke karyawan via WhatsApp.
+              </div>
+            </article>
+          </div>
+          <div class="gallery-note-wrap">
+            <span class="gallery-note" data-i18n-id="Dan masih banyak lagi..." data-i18n-en="And many more...">
+              Dan masih banyak lagi...
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section id="certificates" class="section certificates">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-i18n-id="Sertifikat" data-i18n-en="Certificates">Sertifikat</h2>
+            <p
+              data-i18n-id="Beberapa sertifikat yang saya dapatkan dari pembelajaran, pelatihan, dan pengembangan skill."
+              data-i18n-en="A selection of certificates I earned through learning, training, and skill development."
+            >
+              Beberapa sertifikat yang saya dapatkan dari pembelajaran, pelatihan, dan pengembangan skill.
+            </p>
+          </div>
+          <div class="certificate-grid">
+            <article class="certificate-card reveal">
+              <button class="certificate-trigger" type="button" data-type="pdf" data-pdf="assets/Coursera 1E44DA2A14GC (1).pdf" data-alt="Sertifikat 1">
+                <img class="certificate-image" src="assets/sertif1.jpg" alt="Sertifikat 1" loading="lazy" />
+              </button>
+            </article>
+            <article class="certificate-card reveal">
+              <button class="certificate-trigger" type="button" data-type="pdf" data-pdf="assets/Coursera H6O0E2SVJDHX.pdf" data-alt="Sertifikat 2">
+                <img class="certificate-image" src="assets/sertif2.jpg" alt="Sertifikat 2" loading="lazy" />
+              </button>
+            </article>
+            <article class="certificate-card reveal">
+              <button class="certificate-trigger" type="button" data-type="pdf" data-pdf="assets/Coursera J4GNLGZ1W69E (1).pdf" data-alt="Sertifikat 3">
+                <img class="certificate-image" src="assets/sertif3.jpg" alt="Sertifikat 3" loading="lazy" />
+              </button>
+            </article>
+            <article class="certificate-card reveal">
+              <button class="certificate-trigger" type="button" data-type="pdf" data-pdf="assets/Coursera LIRQASXOT0BC.pdf" data-alt="Sertifikat 4">
+                <img class="certificate-image" src="assets/sertif4.jpg" alt="Sertifikat 4" loading="lazy" />
+              </button>
+            </article>
+            <article class="certificate-card reveal">
+              <button class="certificate-trigger" type="button" data-type="pdf" data-pdf="assets/Coursera N02WL6SIF7PB.pdf" data-alt="Sertifikat 5">
+                <img class="certificate-image" src="assets/sertif5.jpg" alt="Sertifikat 5" loading="lazy" />
+              </button>
+            </article>
+            <article class="certificate-card reveal">
+              <button class="certificate-trigger" type="button" data-type="pdf" data-pdf="assets/Coursera RE4HJU599AHI.pdf" data-alt="Sertifikat 6">
+                <img class="certificate-image" src="assets/sertif6.jpg" alt="Sertifikat 6" loading="lazy" />
+              </button>
+            </article>
+            <article class="certificate-card reveal">
+              <button class="certificate-trigger" type="button" data-type="pdf" data-pdf="assets/Coursera W38G2GTQ2MQF (1).pdf" data-alt="Sertifikat 7">
+                <img class="certificate-image" src="assets/sertif7.jpg" alt="Sertifikat 7" loading="lazy" />
+              </button>
+            </article>
+            <article class="certificate-card reveal">
+              <button class="certificate-trigger" type="button" data-type="image" data-image="assets/sertif8.jpg" data-alt="Sertifikat 8">
+                <img class="certificate-image" src="assets/sertif8.jpg" alt="Sertifikat 8" loading="lazy" />
+              </button>
+            </article>
+            <article class="certificate-card reveal">
+              <button class="certificate-trigger" type="button" data-type="image" data-image="assets/sertif9.jpg" data-alt="Sertifikat 9">
+                <img class="certificate-image" src="assets/sertif9.jpg" alt="Sertifikat 9" loading="lazy" />
+              </button>
             </article>
           </div>
         </div>
@@ -298,19 +527,26 @@
         <div class="container contact-grid">
           <div>
             <h2 data-i18n-id="Kontak" data-i18n-en="Contact">Kontak</h2>
-            <p data-i18n-id="Butuh otomatisasi yang fleksibel? Hubungi saya sekarang." data-i18n-en="Need flexible automation? Contact me now.">
-              Butuh otomatisasi yang fleksibel? Hubungi saya sekarang.
+            <p data-i18n-id="Kirim pesan langsung dari website ini dan pesannya akan masuk ke email saya." data-i18n-en="Send a message directly from this website and it will arrive in my email.">
+              Kirim pesan langsung dari website ini dan pesannya akan masuk ke email saya.
             </p>
           </div>
           <div class="contact-card reveal">
-            <p><strong>WhatsApp</strong>: 08892241731</p>
-            <p><strong>Email</strong>: anderayy27@gmail.com</p>
-            <p><strong>Instagram</strong>: <a href="https://www.instagram.com/andwrii/" target="_blank" rel="noreferrer">@andwrii</a></p>
-            <p><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/andri-%E2%80%98-6b77732a9/" target="_blank" rel="noreferrer">andwrii</a></p>
-            <div class="contact-actions">
-              <a class="btn btn-primary" href="https://wa.me/628892241731" target="_blank" rel="noreferrer">WhatsApp</a>
-              <a class="btn btn-ghost" href="mailto:anderayy27@gmail.com">Email</a>
+            <div class="contact-info">
+              <p><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><strong>WhatsApp</strong>: 08892241731</p>
+              <p><i class="fa-solid fa-at" aria-hidden="true"></i><strong>Email</strong>: anderayy27@gmail.com</p>
+              <p><i class="fa-brands fa-linkedin" aria-hidden="true"></i><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/andri-%E2%80%98-6b77732a9/" target="_blank" rel="noreferrer">andwrii</a></p>
             </div>
+            <form id="contactForm" class="contact-form">
+              <input type="text" name="user_name" placeholder="Nama" required />
+              <input type="email" name="user_email" placeholder="Email" required />
+              <textarea name="message" placeholder="Tulis pesan kamu di sini..." rows="5" required></textarea>
+              <div class="contact-actions">
+                <button id="contactSubmit" class="btn btn-primary" type="submit">Kirim Pesan</button>
+                <a class="btn btn-ghost" href="https://wa.me/628892241731" target="_blank" rel="noreferrer">WhatsApp</a>
+              </div>
+              <p id="contactStatus" class="contact-status" aria-live="polite"></p>
+            </form>
           </div>
         </div>
       </section>
@@ -318,10 +554,22 @@
 
     <footer class="site-footer">
       <div class="container">
-        <p>2024 Andri - AI Automation Portfolio</p>
+        <p>2026 Andri - AI Automation Portofolio</p>
       </div>
     </footer>
 
+    <div class="certificate-modal" id="certificateModal" hidden>
+      <div class="certificate-modal-backdrop" data-close-modal></div>
+      <div class="certificate-modal-dialog" role="dialog" aria-modal="true" aria-label="Certificate preview">
+        <button class="certificate-modal-close" id="certificateModalClose" type="button" aria-label="Close certificate preview">
+          ×
+        </button>
+        <img class="certificate-modal-image" id="certificateModalImage" src="" alt="" hidden />
+        <iframe class="certificate-modal-pdf" id="certificateModalPdf" src="" title="Certificate PDF preview" hidden></iframe>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
