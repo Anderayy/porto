@@ -44,6 +44,10 @@
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Space Grotesk", sans-serif;
   background: var(--bg-layer);
