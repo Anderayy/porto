@@ -921,6 +921,22 @@ a {
   --gradient: linear-gradient(130deg, #8ea0b6, #d7b685);
 }
 
+.gradient-g {
+  --gradient: linear-gradient(130deg, #111827, #d3b07a);
+}
+
+.gradient-h {
+  --gradient: linear-gradient(130deg, #243b55, #9fb7d7);
+}
+
+.gradient-i {
+  --gradient: linear-gradient(130deg, #2f3a4f, #d7b685);
+}
+
+.gradient-j {
+  --gradient: linear-gradient(130deg, #765931, #c7d4e5);
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(30px) scale(0.98);
